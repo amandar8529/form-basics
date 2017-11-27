@@ -12,14 +12,36 @@
 
 <body>
     <div class="container">
-        <h1>Form Basics</h1>
+        <h1>Survey</h1>
         <hr>
         <form action="http://www.w3schools.com/action_page.php" method="get">
 
             Name:
-            <input type="text" name="name"><br> E-mail:
-            <input type="email" name="email"><br>
-
+            <input type="text" name="name" requires><br> 
+            E-mail:
+            <input type="email" name="email" requires><br>
+            
+                <input type= "radio" name = "sex" value= "male"> Male
+                <input type= "radio" name = "sex" value= "female"> Female 
+                <br> <br>
+                <select name = "age">
+                    <option value= "select age" selected>select age</option>
+                    <option value= "15" selected>15</option>
+                    <option value= "16" selected>16</option>
+                    <option value= "17" selected>17</option>
+                    <option value= "18" selected>18</option>
+                    <option value= "19+" selected>19+</option>
+                required</select>
+                <br><br>
+               Animals at home:
+               <input type ="checkbox" name = "pet-0" value= "none"> None
+                <input type ="checkbox" name = "pet-2" value= "Cat"> Cat
+               <input type ="checkbox" name = "pet-1" value= "DOG"> Dog
+               <input type ="checkbox" name = "pet-3" value= "Rabbit"> Rabbit
+               <input type ="checkbox" name = "pet-4" value= "Other Type"> Other Type
+               <br><br>
+               What do you want to be when you are older?Why?:
+               <textarea name = "future career"></textarea>
             <!--add your own inputs below-->
 
 
@@ -28,7 +50,7 @@
 
 
 
-
+<br>
             <!--add your own inputs above-->
 
             <input class="blue-button" type="submit" value="Submit">
